@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #27204e;
+    background: -moz-linear-gradient(161deg, #fa7a15 27%, #efab6e 100%);
+}
+
+h1{
+    width: 50%;
+    text-transform: uppercase;
+    color: #f3ebeb;
+    font-size: 25px;
+    font-family: sans-serif;
+    margin-bottom: 35px;
+}
+
+form{
+    width: 50%;
+    padding: 100px;
+    /*  INICIO DO GLASSMORPHISM   */
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.18);
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(10.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    /*  FIM DO GLASSMORPHISM  */
+}
+
+.area-input{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.area-input input{
+    width: 45%;
+}
+
+.endereco{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.area-email{
+    width: 100%;
+    display: flex;
+}
+
+.area-email input{
+    width: 100%;
+}
+
+.area-botao{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#botao-enviar{
+    border: none;
+    border-radius: 5px;
+    width: 30%;
+    height: 45px;
+    background-color: #565656;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.60);
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#botao-enviar:hover{
+    transition: .2s ease;
+    background-color: #3d3d3d;
+}
+
+input{
+    color: #fa7a15;
+    font-weight: bold;
+    height: 45px;
+    padding-left: 10px;
+    /* Glassmorphism no input  */
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /*  fim glassmorphis no input   */
+}
+
+input::placeholder{
+    color: #fa7a15;
+}
+
+input[type=number]{
+    color: fa7a15;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid #fa7a15;
+    font-weight: bold;
+}
+
+footer{
+    position: absolute;
+    top: 90vh;
+    color: #fff;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-style: italic;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário com efeito Vidro</title>
+</head>
+<body>
+    <div class=container>
+        <form>
+            <h1>cadastre-se</h1>
+            <div class=area-input>
+                <input type=text id=nome name=Nome placeholder=Nome required/>
+                <input type=text id=sobrenome name=Sobrenome placeholder=Sobrenome required/>
+            </div><!--area-input-->
+            <div class='area-input endereco'>
+                <input type=text id=endereco name=Endereço placeholder=Endereço required/>
+                <input type=number id=number name=Numero min=0 placeholder=Número required/>
+            </div><!--area-input endereco-->
+            <div class=area-email>
+                <input type=email id=email name=Email placeholder=E-mail required/>
+            </div><!--area-email-->
+            <div class=area-botao>
+                <button type=submit id="botao-enviar">Enviar</button>
+            </div><!--area-botao-->
+        </form>
+        <footer>
+            <p>&copy Fabio Soutto Dev - "In code we trust".</p>
+        </footer>
+    </div><!--container-->
+    
+</body>
+</html>
